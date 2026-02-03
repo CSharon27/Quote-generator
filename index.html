@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mood-Based Random Quote Generator - Find quotes that match your feelings.">
+    <title>MoodQuotes | How are you feeling?</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">MoodQuotes</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#moods">Moods</a></li>
+            <li><a href="#quote-section">Quotes</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <i class="fas fa-times close-menu"></i>
+        <a href="#hero">Home</a>
+        <a href="#moods">Moods</a>
+        <a href="#quote-section">Quotes</a>
+        <a href="#about">About</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>How Are You Feeling Today?</h1>
+            <p>Discover quotes that resonate with your current state of mind.</p>
+            <a href="#moods" class="cta-button">Get a Quote <i class="fas fa-arrow-down"></i></a>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </header>
+
+    <!-- Mood Selection Section -->
+    <section id="moods" class="mood-section">
+        <div class="section-header">
+            <h2>Select Your Mood</h2>
+            <p>Choose how you feel to get inspired.</p>
+        </div>
+        <div class="mood-grid">
+            <div class="mood-card" data-mood="happy">
+                <div class="mood-icon">😊</div>
+                <h3>Happy</h3>
+            </div>
+            <div class="mood-card" data-mood="sad">
+                <div class="mood-icon">😢</div>
+                <h3>Sad</h3>
+            </div>
+            <div class="mood-card" data-mood="motivated">
+                <div class="mood-icon">💪</div>
+                <h3>Motivated</h3>
+            </div>
+            <div class="mood-card" data-mood="calm">
+                <div class="mood-icon">😌</div>
+                <h3>Calm</h3>
+            </div>
+            <div class="mood-card" data-mood="angry">
+                <div class="mood-icon">😠</div>
+                <h3>Angry</h3>
+            </div>
+            <div class="mood-card" data-mood="love">
+                <div class="mood-icon">❤️</div>
+                <h3>Love</h3>
+            </div>
+            <div class="mood-card" data-mood="stressed">
+                <div class="mood-icon">😖</div>
+                <h3>Stressed</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Display Section -->
+    <section id="quote-section" class="quote-section">
+        <div class="quote-container glass-card">
+            <div class="quote-content">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p id="quote-text" class="quote-text">Select a mood to see a quote here...</p>
+                <i class="fas fa-quote-right quote-icon"></i>
+            </div>
+            <p id="quote-author" class="quote-author">- MoodQuotes</p>
+            
+            <div class="action-buttons">
+                <button id="new-quote-btn" class="btn primary-btn" disabled>Generate Quote</button>
+                <button id="twitter-btn" class="btn icon-btn" title="Tweet this quote" disabled><i class="fab fa-twitter"></i></button>
+            </div>
+            
+            <button id="change-mood-btn" class="btn secondary-btn" style="display: none;">Change Mood</button>
+        </div>
+    </section>
+
+    <!-- About / Footer -->
+    <footer id="about">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>MoodQuotes</h3>
+                <p>Words to match your vibe.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MoodQuotes. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
